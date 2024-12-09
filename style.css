@@ -1,0 +1,232 @@
+body {
+    background-color: black;
+
+}
+
+#navbar {
+    background-color: rgb(255, 189, 45);
+
+
+}
+
+.stripe1 {
+    content: '';
+    position: absolute;
+    top: 45px;
+    bottom: 0;
+    /* Положение псевдоэлемента */
+    left: 0;
+    /* Левый край */
+    right: 0;
+    /* Правый край */
+    height: 18px;
+    /* Высота полоски */
+    background-color: rgb(255, 189, 45);
+    /* Цвет*/
+    filter: blur(6px);
+    /* Размытие*/
+    z-index: 1;
+}
+
+#search1 {
+    background-color: rgba(255, 255, 255, 0.226);
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+
+#input1 {
+    background-color: rgba(158, 158, 158, 0.226);
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+
+.container-fluid {
+    background-color: rgba(255, 255, 255, 0.226);
+
+}
+
+.imgContainer {
+    width: 100vw;
+    height: 100vh;
+}
+
+.bgImg {
+    width: 100%;
+    height: 105%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.name1 {
+    position: absolute;
+    padding-left: 50px;
+    top: 700px;
+    left: 5%;
+    width: 700px;
+    color: white;
+    font-size: 80px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    letter-spacing: 4px;
+    line-height: 80px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.418);
+}
+
+.textScreen2 {
+    margin-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.name2 {
+    padding-right: 50px;
+    width: 700px;
+    color: white;
+    font-size: 80px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    letter-spacing: 4px;
+    line-height: 80px;
+}
+
+.name3 {
+
+    width: 700px;
+    color: white;
+    font-size: 25px;
+    font-family: sans-serif;
+}
+
+.imgContainer3 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.goldengate {
+    width: 450px;
+    height: 500px;
+    margin-left: 50px;
+
+}
+
+.stonehenge {
+    margin-top: 100px;
+    margin-left: -500px;
+    width: 450px;
+    height: 500px;
+}
+
+.bottom {
+    margin-top: 2000px;
+    width: 100px;
+    height: 100px;
+
+}
+
+@media screen and (max-width: 1200px) {
+    .name2 {
+        font-size: 70px;
+        line-height: 70px;
+        width: 500px;
+        padding-right: 50px;
+
+    }
+
+    .name3 {
+        font-size: 18px;
+        line-height: 30px;
+        width: 500px;
+
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .name2 {
+        font-size: 60px;
+        line-height: 70px;
+        width: 500px;
+        padding-right: 50px;
+
+    }
+
+    .name3 {
+        font-size: 16px;
+        line-height: 30px;
+        width: 500px;
+
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .name2 {
+        font-size: 60px;
+        line-height: 70px;
+        width: 500px;
+        padding-right: 50px;
+
+    }
+
+    .name3 {
+        font-size: 16px;
+        line-height: 30px;
+        width: 500px;
+
+    }
+
+    .hide1 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .textScreen2 {
+        justify-content: center;
+    }
+
+    .name2 {
+        font-size: 60px;
+        line-height: 70px;
+        width: 500px;
+        padding-right: 50px;
+
+    }
+
+    .name3 {
+        display: none;
+
+    }
+
+    .imgContainer3 {
+        width: 700px;
+    height: 500px;
+    }
+
+    .goldengate {
+        transform: scale(0.6);
+        margin-left: 0;
+    }
+    .stonehenge {
+        transform: scale(0.6);
+    }
+}
