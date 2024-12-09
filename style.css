@@ -63,6 +63,7 @@ body {
 }
 
 .bgImg {
+    min-width: 500px;
     width: 100vw;
     height: 105%;
     object-fit: cover;
