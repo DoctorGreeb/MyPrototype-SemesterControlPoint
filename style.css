@@ -56,6 +56,10 @@ body {
     background-color: rgba(255, 255, 255, 0.226);
 
 }
+.navbar-toggler-icon {
+    position: relative;
+    z-index: 2;
+}
 
 .imgContainer {
     width: 100vw;
@@ -63,7 +67,6 @@ body {
 }
 
 .bgImg {
-    min-width: 500px;
     width: 100vw;
     height: 105%;
     object-fit: cover;
@@ -71,9 +74,10 @@ body {
 }
 
 .name1 {
-    position: absolute;
+    position: relative;
     padding-left: 50px;
-    top: 700px;
+    margin-top: -250px;
+    top: 0px;
     left: 5%;
     width: 700px;
     color: white;
@@ -116,26 +120,32 @@ body {
 }
 
 .imgContainer3 {
-    margin-left: auto;
-    margin-right: auto;
-    width: 900px;
+    position: absolute;
+    width: 100vw;
     height: 500px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
-
+.pic001 {
+    position: relative;
+    width: 450px;
+    height: 500px;
+    overflow: hidden;
+    
+}
+.pic002 {
+    margin-top: 50px;
+    margin-left: -50px;
+    position: relative;
+    width: 450px;
+    height: 500px;
+    overflow: hidden;
+}
 .goldengate {
-    width: 450px;
-    height: 500px;
-    margin-left: 50px;
-
+    height: 100%;
 }
-
 .stonehenge {
-    margin-top: 100px;
-    margin-left: -500px;
-    width: 450px;
-    height: 500px;
+    height: 100%;
 }
 
 .bottom {
@@ -204,7 +214,12 @@ body {
     .textScreen2 {
         justify-content: center;
     }
-
+    .name1 {
+        width: 100vw;
+        font-size: 60px;
+        margin-left: 0;
+        padding-left: 0;
+    }
     .name2 {
         font-size: 60px;
         line-height: 70px;
@@ -219,15 +234,99 @@ body {
     }
 
     .imgContainer3 {
-        width: 700px;
+        width: 100vw;
     height: 500px;
     }
 
-    .goldengate {
-        transform: scale(0.6);
-        margin-left: 0;
+    .pic001 {
+        width: 310px;
+        height: 450px;
+        margin-left: 0px;
+        margin-top: 0px;
+
     }
-    .stonehenge {
-        transform: scale(0.6);
+    .pic002 {
+        width: 310px;
+        height: 450px;
+        margin-left: -50px;
+        margin-top: 50px;
+
+    }
+}
+@media screen and (max-width: 500px) {
+    #navbar {
+        width: 100vw;
+        font-size: larger;
+    }
+    .navbar-brand {
+        font-size: 35px;
+        padding-left: 10px;
+        z-index: 2;
+    }
+    .navbar-toggler-icon {
+        font-size: 35px;
+    }
+    .nav-link, .dropdown-item {
+        font-size: 30px;
+
+    }
+    #search1 {
+        height: 50px;
+        font-size: 35px;
+    }
+    .stripe1 {
+        width: 100vw;
+    }
+    .imgContainer {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .bgImg {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .textScreen2 {
+        justify-content: center;
+    }
+    .name1 {
+        width: 100vw;
+        font-size: 60px;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .name2 {
+        font-size: 60px;
+        line-height: 70px;
+        width: 400px;
+        padding-right: 50px;
+
+    }
+
+    .name3 {
+        display: none;
+
+    }
+
+    .imgContainer3 {
+        width: 100vw;
+    height: 500px;
+    }
+
+    .pic001 {
+        width: 280px;
+        height: 400px;
+        margin-left: 0px;
+        margin-top: 0px;
+
+    }
+    .pic002 {
+        width: 280px;
+        height: 400px;
+        margin-left: -50px;
+        margin-top: 50px;
+
     }
 }
