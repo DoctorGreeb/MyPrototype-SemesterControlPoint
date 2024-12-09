@@ -63,10 +63,10 @@ body {
 }
 
 .bgImg {
-    width: 100%;
+    width: 100vw;
     height: 105%;
     object-fit: cover;
-    position: absolute;
+    position: relative;
 }
 
 .name1 {
