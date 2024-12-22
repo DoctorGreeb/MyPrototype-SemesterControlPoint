@@ -9,6 +9,11 @@ body {
 
 }
 
+.custom-tooltip {
+    --bs-tooltip-bg: var(--bd-violet-bg);
+    --bs-tooltip-color: var(--bs-white);
+  }
+
 .stripe1 {
     content: '';
     position: absolute;
@@ -56,6 +61,7 @@ body {
     background-color: rgba(255, 255, 255, 0.226);
 
 }
+
 .navbar-toggler-icon {
     position: relative;
     z-index: 2;
@@ -76,7 +82,7 @@ body {
 .name1 {
     position: relative;
     padding-left: 50px;
-    margin-top: -250px;
+    margin-top: -350px;
     top: 0px;
     left: 5%;
     width: 700px;
@@ -102,6 +108,8 @@ body {
 
 .name2 {
     padding-right: 50px;
+    margin-top: 600px;
+    margin-bottom: 500px;
     width: 700px;
     color: white;
     font-size: 80px;
@@ -112,11 +120,51 @@ body {
 }
 
 .name3 {
-
+    margin-top: 600px;
+    margin-bottom: 500px;
     width: 700px;
     color: white;
     font-size: 25px;
     font-family: sans-serif;
+}
+
+.textBoxCarousel, .textBoxTests {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0);
+    min-width: 400px;
+}
+
+.nameOfCarousel {
+    margin-top: 800px;
+
+    width: 70vw;
+    min-width: 400px;
+    color: white;
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    letter-spacing: 4px;
+    line-height: 80px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.418);
+    background-color: rgba(255, 255, 255, 0);
+    text-align: center;
+}
+
+.nameOfTests {
+    margin-top: 100px;
+
+    width: 70vw;
+    min-width: 400px;
+    color: white;
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    letter-spacing: 4px;
+    line-height: 80px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.418);
+    background-color: rgba(255, 255, 255, 0);
+    text-align: center;
 }
 
 .imgContainer3 {
@@ -126,13 +174,15 @@ body {
     display: flex;
     justify-content: center;
 }
+
 .pic001 {
     position: relative;
     width: 450px;
     height: 500px;
     overflow: hidden;
-    
+
 }
+
 .pic002 {
     margin-top: 50px;
     margin-left: -50px;
@@ -141,11 +191,22 @@ body {
     height: 500px;
     overflow: hidden;
 }
+
 .goldengate {
     height: 100%;
 }
+
 .stonehenge {
     height: 100%;
+}
+
+
+.carousel {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    width: 50vw;
+    min-width: 400px;
 }
 
 .bottom {
@@ -155,6 +216,237 @@ body {
 
 }
 
+/*начало кода карточек*/
+.topStripe {
+    background-color: rgba(206, 249, 255, 0.507);
+    height: 50px;
+    width: 100vw;
+}
+
+marquee {
+    margin-top: 7px;
+    font-size: 20px;
+}
+
+
+.topStripe2 {
+    background-color: rgba(252, 255, 206, 0);
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    transition: 0.3s;
+}
+
+.logo {
+    background-color: rgba(139, 139, 139, 0);
+    width: 280px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.linkIndex {
+    background-color: rgba(0, 0, 0, 0);
+    width: 280px;
+    height: 35px;
+    position: absolute;
+    z-index: 1;
+}
+
+
+.imgLogo {
+    width: 250px;
+    transition: transform 0.3s ease;
+}
+.imgLogo:hover {
+    transform: scale(1.02);
+}
+.buttonsStripe {
+    background-color: rgba(224, 224, 224, 0);
+    width: 580px;
+    height: 100px;
+    margin-right: 25px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.buttonS1 {
+    width: 200px;
+    height: 35px;
+    background-color:rgb(255, 255, 255);
+    border-radius: 5px;
+    transition: 0.3s;
+    border: 2px solid darkcyan;
+}
+.buttonS1:hover {
+    background-color: darkcyan;
+}
+.buttonS1:hover .buttonSText {
+    color: white;
+}
+
+.buttonSText {
+    margin-top: 5px;
+    color:darkcyan;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.bodyMain {
+    background-color: rgba(194, 228, 255, 0);
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+}
+
+.bodyFeed {
+    background-color: rgba(194, 175, 202, 0);
+    height: 100%;
+    width: 50%;
+}
+.bodyFeedSub1 {
+    background-color: rgba(91, 181, 255, 0.185);
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.bodyFeedSub1Internal {
+    background-color: aliceblue;
+    height: 90%;
+    width: 49%;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    /* transition: transform 0.3s ease, color 0.3s ease, height 0.3s ease; */
+    transition: 0.3s;
+    margin-left: 20px;
+    margin-right: 20px;
+    overflow: hidden;
+}
+
+
+.bodyFeedSub1InternalPic {
+    width: 290%;
+}
+.bodyFeedSub1InternalTxt {
+    padding: 10px;
+}
+.bodyFeedSub1Internal:hover {
+    background-color: rgb(0, 139, 139);
+    color: aliceblue;
+}
+.bodyFeedSub1Internal:active {
+    background-color: rgba(0, 139, 139, 0.678);
+    color: rgb(255, 255, 255);
+
+}
+a:link, a:visited, a:hover, a:active {
+    color: inherit;
+    text-decoration: none;
+}
+.text1 {
+    font-family: 'arial', sans-serif;
+    font-size: 20px;
+    padding-top: 100%;
+    padding-bottom: 100%;
+    position: relative;
+    z-index: 2;
+}
+.text2 {
+    font-family: 'arial', sans-serif;
+    font-size: 15px;
+    padding-top: 100%;
+    padding-bottom: 100%;
+}
+.textCardLink {
+    padding-top: 100%;
+    padding-bottom: 100%;
+    position: relative;
+    z-index: 2;
+}
+.textCardP {
+    margin-top: 10%;
+    padding-bottom: 100%;
+    text-align: center;
+    font-family: 'arial', sans-serif;
+    text-shadow: 0 3px 10px rgb(0, 0, 0);
+    font-size: 20px;
+    color: aliceblue;
+    position: relative;
+    z-index: 2;
+
+}
+
+.bodyFeedSub2 {
+    background-color: rgba(185, 255, 197, 0);
+    height: 60%;
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 10px;
+    gap: 20px;
+    grid-auto-flow: dense;
+    
+    
+}
+.bodyFeedSub2Internal {
+    background-color: aliceblue;
+    height: 200px;
+    width: 100%;
+    transition: transform 0.3s, height 0.3s;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    border-radius: 10px;
+    
+}
+.bodyFeedSub2Internal:hover .bodyFeedSub2InternalPic {
+    transform: scale(1.02);
+}
+.bodyFeedSub2InternalPic {
+    height: 100%;
+    max-width: auto;
+    transition: transform 0.3s;
+
+
+}
+.cover1 {
+    position: absolute; /* Установим абсолютное позиционирование для cover1 */
+    top: 100px; /* Разместим его вверху контейнера */
+    left: 0; /* И слева */
+    width: 100%; /* Обеспечим полную ширину */
+    height: 50%; /* Высота 50% для эффекта наложения */
+    background-color: rgba(240, 248, 255, 0.473);
+    z-index: 1;
+}
+
+
+.bottomStripe {
+    background-color: rgba(6, 70, 95, 0);
+    height: 600px;
+    width: 100vw;
+}
+.background1 {
+    width: 100%;
+    height: 100%;
+    background-image: url('bottomSand.jpg');
+    background-size: cover; /* Растянуть изображение по размеру контейнера */
+    background-position: center;
+}
+/*конец кода карточек*/
+
+/*код медиа основной*/
 @media screen and (max-width: 1200px) {
     .name2 {
         font-size: 70px;
@@ -214,12 +506,14 @@ body {
     .textScreen2 {
         justify-content: center;
     }
+
     .name1 {
         width: 100vw;
         font-size: 60px;
         margin-left: 0;
         padding-left: 0;
     }
+
     .name2 {
         font-size: 60px;
         line-height: 70px;
@@ -235,7 +529,7 @@ body {
 
     .imgContainer3 {
         width: 100vw;
-    height: 500px;
+        height: 500px;
     }
 
     .pic001 {
@@ -245,6 +539,7 @@ body {
         margin-top: 0px;
 
     }
+
     .pic002 {
         width: 310px;
         height: 450px;
@@ -253,30 +548,38 @@ body {
 
     }
 }
+
 @media screen and (max-width: 500px) {
     #navbar {
         width: 100vw;
         font-size: larger;
     }
+
     .navbar-brand {
         font-size: 35px;
         padding-left: 10px;
         z-index: 2;
     }
+
     .navbar-toggler-icon {
         font-size: 35px;
     }
-    .nav-link, .dropdown-item {
+
+    .nav-link,
+    .dropdown-item {
         font-size: 30px;
 
     }
+
     #search1 {
         height: 50px;
         font-size: 35px;
     }
+
     .stripe1 {
         width: 100vw;
     }
+
     .imgContainer {
         width: 100vw;
         height: 100vh;
@@ -290,6 +593,7 @@ body {
     .textScreen2 {
         justify-content: center;
     }
+
     .name1 {
         width: 100vw;
         font-size: 60px;
@@ -312,7 +616,7 @@ body {
 
     .imgContainer3 {
         width: 100vw;
-    height: 500px;
+        height: 500px;
     }
 
     .pic001 {
@@ -322,6 +626,7 @@ body {
         margin-top: 0px;
 
     }
+
     .pic002 {
         width: 280px;
         height: 400px;
@@ -330,3 +635,98 @@ body {
 
     }
 }
+/*конец кода медиа основной*/
+
+/*код медиа блоков*/
+@media (max-width: 1555px) {
+    .bodyFeedSub1Internal {
+        height: 65%;
+        
+    }
+}
+
+@media (max-width: 880px) {
+    .topStripe2 {
+        height: 150px;
+        gap: 50px;
+        
+    }
+    .buttonsStripe {
+        height: 150px;
+        display: block;
+        
+    }
+    .logo {
+        height: 150px;
+    }
+}
+@media (max-width: 760px) {
+    .nameOfTests {
+        font-size: 35px;
+    }
+    .bodyFeedSub1Internal {
+    margin-left: 6px;
+    margin-right: 6px;
+    }
+    .bodyFeedSub1InternalTxt {
+        padding: 8px;
+    }
+    .text1 {
+        font-size: 15px;
+    }
+    .text2 {
+        font-size: 10px;
+    }
+    .buttonsStripe {
+        margin-right: 30px;
+        scale: 0.9;
+    }
+    .logo {
+        margin-left: -30px;
+        scale: 0.9;
+    }
+}
+@media (max-width: 600px) {
+    .bodyFeedSub1Internal {
+    margin-left: 2px;
+    margin-right: 2px;
+    }
+    .bodyFeedSub1InternalTxt {
+        padding: 4px;
+    }
+    .text1 {
+        font-size: 12px;
+    }
+    .text2 {
+        font-size: 8px;
+    }
+    .buttonsStripe {
+        margin-right: 40px;
+        scale: 0.8;
+    }
+    .logo {
+        margin-left: -40px;
+        scale: 0.8;
+    }
+    .bodyFeedSub1 {
+        width: 120%;
+    }
+}
+
+@media (min-width: 2500px) {
+    .bottomStripe {
+        margin-top: 400px;
+    }
+    .logo {
+        margin-left: 40px;
+        scale: 1.5;
+    }
+    .buttonsStripe {
+        margin-right: 160px;
+        scale: 1.5;
+    }
+    marquee {
+        scale: 1.5;
+    }
+}
+/*конец кода медиа блоков*/
